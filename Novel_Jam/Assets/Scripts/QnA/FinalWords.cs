@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class FinalWords : MonoBehaviour
 {
+    [SerializeField] private GameObject AnswerTRUE;
+    [SerializeField] private GameObject AnswerFALSE;
     [SerializeField] private InputField firstWord;
     [SerializeField] private InputField secondWord;
     [SerializeField] private InputField thirdWord;
     public string[] firstWordsArray;
     public string[] secondWordsArray;
     public string[] thirdWordsArray;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +32,14 @@ public class FinalWords : MonoBehaviour
         if (IsAnswerCorrect())
         {
             Debug.Log("Nice answer");
+            StaticResults.FinalWordsAnswer = true;
+            AnswerTRUE.SetActive(true);
         }
         else
         {
             Debug.Log("Bad answer");
+            StaticResults.FinalWordsAnswer = false;
+            AnswerFALSE.SetActive(true);
         }
     }
 

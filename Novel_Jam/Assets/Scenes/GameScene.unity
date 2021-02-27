@@ -1019,6 +1019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 123d577823545c44b9c1eb1f7d0e91ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AnswerTRUE: {fileID: 2013438171}
+  AnswerFALSE: {fileID: 1613022804}
   firstWord: {fileID: 615320447}
   secondWord: {fileID: 187523190}
   thirdWord: {fileID: 1704784739}
@@ -1234,7 +1236,6 @@ RectTransform:
   - {fileID: 1710240877}
   - {fileID: 2013438170}
   - {fileID: 1613022803}
-  - {fileID: 1110253879}
   m_Father: {fileID: 656386964}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1573,148 +1574,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106395165}
   m_CullTransparentMesh: 0
---- !u!1001 &1110253878
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 861359581}
-    m_Modifications:
-    - target: {fileID: 4318567816103865847, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: delay
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 550
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 50.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865849, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_Name
-      value: QuestionA Heck Words OTHER
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816103865849, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4318567816999048726, guid: 829d6153e150efd4991ea2ac86e2c429,
-        type: 3}
-      propertyPath: m_Text
-      value: "\u042F \u043F\u0440\u043E\u0441\u0438\u043B \u0441\u043A\u0430\u0437\u0430\u0442\u044C
-        \"\u0410\", \u0430 \u0442\u044B \u0433\u043E\u0432\u043E\u0440\u0438\u0448\u044C
-        \"F\""
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 829d6153e150efd4991ea2ac86e2c429, type: 3}
---- !u!224 &1110253879 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
-    type: 3}
-  m_PrefabInstance: {fileID: 1110253878}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1173077010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2649,7 +2508,7 @@ PrefabInstance:
     - target: {fileID: 4318567816103865849, guid: 829d6153e150efd4991ea2ac86e2c429,
         type: 3}
       propertyPath: m_Name
-      value: QuestionA Heck Words ENG
+      value: FinalWordsQuestion Heck FALSE
       objectReference: {fileID: 0}
     - target: {fileID: 4318567816103865849, guid: 829d6153e150efd4991ea2ac86e2c429,
         type: 3}
@@ -2668,6 +2527,12 @@ PrefabInstance:
 --- !u!224 &1613022803 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
+    type: 3}
+  m_PrefabInstance: {fileID: 1613022802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1613022804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4318567816103865849, guid: 829d6153e150efd4991ea2ac86e2c429,
     type: 3}
   m_PrefabInstance: {fileID: 1613022802}
   m_PrefabAsset: {fileID: 0}
@@ -3585,7 +3450,7 @@ PrefabInstance:
     - target: {fileID: 4318567816103865849, guid: 829d6153e150efd4991ea2ac86e2c429,
         type: 3}
       propertyPath: m_Name
-      value: QuestionA Heck Words  RUS
+      value: FinalWordsQuestion Heck TRUE
       objectReference: {fileID: 0}
     - target: {fileID: 4318567816103865849, guid: 829d6153e150efd4991ea2ac86e2c429,
         type: 3}
@@ -3604,6 +3469,12 @@ PrefabInstance:
 --- !u!224 &2013438170 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4318567816103865848, guid: 829d6153e150efd4991ea2ac86e2c429,
+    type: 3}
+  m_PrefabInstance: {fileID: 2013438169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2013438171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4318567816103865849, guid: 829d6153e150efd4991ea2ac86e2c429,
     type: 3}
   m_PrefabInstance: {fileID: 2013438169}
   m_PrefabAsset: {fileID: 0}
