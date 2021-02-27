@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class QuestionA : MonoBehaviour
 {
+
+    [SerializeField] private GameObject Heck;
+    [SerializeField] private GameObject HeckFalse;
+
     [SerializeField] private InputField inputFied;
     [SerializeField] private Text text;
     [SerializeField] private Text fake;
@@ -90,5 +94,7 @@ public class QuestionA : MonoBehaviour
         }
 
         _answerFlag = false;
+        Heck.SetActive(false);
+        HeckFalse.SetActive(true);
     }
 }

@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class FinalWords : MonoBehaviour
 {
+    [SerializeField] private GameObject Heck;
+    [SerializeField] private GameObject HeckTrue;
+    [SerializeField] private GameObject HeckFalse;
+
+
     [SerializeField] private GameObject AnswerTRUE;
     [SerializeField] private GameObject AnswerFALSE;
     [SerializeField] private InputField firstWord;
@@ -31,12 +36,16 @@ public class FinalWords : MonoBehaviour
     {
         if (IsAnswerCorrect())
         {
+            Heck.SetActive(false);
+            HeckTrue.SetActive(true);
             Debug.Log("Nice answer");
             StaticResults.FinalWordsAnswer = true;
             AnswerTRUE.SetActive(true);
         }
         else
         {
+            Heck.SetActive(false);
+            HeckFalse.SetActive(true);
             Debug.Log("Bad answer");
             StaticResults.FinalWordsAnswer = false;
             AnswerFALSE.SetActive(true);

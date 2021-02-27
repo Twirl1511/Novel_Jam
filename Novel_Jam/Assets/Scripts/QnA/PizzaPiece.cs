@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class PizzaPiece : MonoBehaviour
 {
+    public Pizza pizzaScript;
+
     private void OnMouseDown()
     {
+        Pizza.startRoll = true;
         Pizza.speed--;
+        Pizza.pieces++;
         Debug.Log(Pizza.speed);
-        Destroy(gameObject);
+        pizzaScript.randomPieces.Add(0);
+        gameObject.SetActive(false);
+        
+        
+        
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("pizzaPlace"))
-        {
-
-        }
-    }
+  
 }

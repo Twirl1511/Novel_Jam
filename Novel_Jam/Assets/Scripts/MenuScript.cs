@@ -5,8 +5,8 @@ using System.Collections;
 
 public class MenuScript : MonoBehaviour
 {
+    [SerializeField] private GameObject CreatorsPanel;
     [SerializeField] private Button StartButton;
-    [SerializeField] private Button ExitButton;
     [SerializeField] private GameObject HeckAndPaper;
     [SerializeField] private float seconds = 3f;
 
@@ -32,5 +32,13 @@ public class MenuScript : MonoBehaviour
     {
         Application.Quit();
     }
-    
+
+    public void CreatorsButtOnClic()
+    {
+        CreatorsPanel.SetActive(true);
+    }
+    public void BACKButtOnClic()
+    {
+        CreatorsPanel.SetActive(false);
+    }
 }
