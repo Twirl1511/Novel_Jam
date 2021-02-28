@@ -32,6 +32,7 @@ public class FinalWords : MonoBehaviour
     }
     public void AnswerButton()
     {
+        Debug.Log(counter);
         counter++;
         try
         {
