@@ -631,6 +631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 921590977}
   Ringing: {fileID: 8300000, guid: df57a18fa5e53dc4ca38e7fcf72922be, type: 3}
+  EndCall: {fileID: 8300000, guid: bf84e7e619b01604bafd43d55d1acf80, type: 3}
+  KeySound: {fileID: 8300000, guid: f84a555f7c345c34a80e6612734b728b, type: 3}
 --- !u!82 &921590977
 AudioSource:
   m_ObjectHideFlags: 0
