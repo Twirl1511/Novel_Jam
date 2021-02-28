@@ -863,7 +863,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b13097df317f30742a73dc1a64aae64d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.743
+  m_Volume: 0.73
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2394,6 +2394,7 @@ MonoBehaviour:
   HeckAndPaper: {fileID: 930093499}
   seconds: 1.5
   HechAppearSound: {fileID: 1450752610}
+  MainSound: {fileID: 519420030}
 --- !u!82 &1450752610
 AudioSource:
   m_ObjectHideFlags: 0

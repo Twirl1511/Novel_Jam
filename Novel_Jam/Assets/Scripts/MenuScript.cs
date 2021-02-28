@@ -10,6 +10,7 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private GameObject HeckAndPaper;
     [SerializeField] private float seconds = 1.5f;
     public AudioSource HechAppearSound;
+    public AudioSource MainSound;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class MenuScript : MonoBehaviour
         HechAppearSound.Play();
         StartButton.GetComponent<Button>().enabled = false;
         HeckAndPaper.SetActive(true);
+        MainSound.Stop();
         StartCoroutine(DelayStart(seconds));
     }
 
