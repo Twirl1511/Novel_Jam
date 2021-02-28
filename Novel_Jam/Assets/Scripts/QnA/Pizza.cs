@@ -4,97 +4,51 @@ using UnityEngine;
 
 public class Pizza : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> PizzaArray;
-    public List<int> randomPieces;
-    public static bool startRoll;
+    [SerializeField] private GameObject CurrentScene;
+    [SerializeField] private GameObject NextScene;
 
-    public static float speed;
-    public static int pieces;
+    public AudioSource PizzaAudioSource;
+    [SerializeField] private GameObject PizzaBox;
+
+
+    public int pieces;
     void Start()
     {
-        pieces = 0;
-        startRoll = false;
-        speed = 8.1f;    
+        pieces = 8;
+        StartCoroutine(DelayStartShowBoard());
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        if (startRoll)
-        {
-            StartCoroutine(SwitchPieces());
-        }
 
-
-
-        foreach (var e in PizzaArray)
-        {
-            if (e == null)
-            {
-                Debug.Log("empty");
-                PizzaArray.Remove(e);
-            }
-        }
-
-       
+        
 
     }
-
-    IEnumerator SwitchPieces()
+    IEnumerator DelayStartShowBoard()
     {
-        yield return new WaitForSeconds(speed);
-
-       
+        yield return new WaitForSeconds(4);
+        PizzaBox.SetActive(true);
         
-
-
-        for (int i = 0; i < randomPieces.Count; i++)
-        {
-            randomPieces[i] = Random.Range(0,8);
-            for (int j = 0; j < i; j++)
-            {
-                if(randomPieces[j] == randomPieces[i])
-                {
-                    randomPieces[i] = Random.Range(0, 8);
-                }
-            }
-        }
-
-
-
-        for (int i = 0; i < PizzaArray.Count; i++)
-        {
-            PizzaArray[i].SetActive(false);
-        }
-
-        for (int i = 0; i < PizzaArray.Count; i++)
-        {
-            for(int j = 0; j < randomPieces.Count; j++)
-            {
-
-                if(i == randomPieces[j])
-                {
-                    PizzaArray[i].SetActive(false);
-                }
-                else
-                {
-                    PizzaArray[i].SetActive(true);
-                }
-            }
-
-            
-            
-        }
-
-
-
-        
-
-            
-        
-        
-
     }
 
+    IEnumerator SceneSwitcher()
+    {
+        yield return new WaitForSeconds(2);
+        PizzaBox.SetActive(false);
+        NextScene.SetActive(true);
+        CurrentScene.SetActive(false);
+    }
 
+    
+    public void EatPizza()
+    {
+        PizzaAudioSource.Play();
+        pieces--;
+        if (pieces <= 0)
+        {
+            StartCoroutine(SceneSwitcher());
+        }
+        
+    }
 }
