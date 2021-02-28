@@ -14,7 +14,7 @@ public class TextMistake : MonoBehaviour
     [SerializeField] private GameObject Board;
     [SerializeField] private Text TimerText;
     private int timerInt = 5;
-
+    
 
     void Start()
     {
@@ -23,14 +23,14 @@ public class TextMistake : MonoBehaviour
 
     IEnumerator DelayStartShowBoard()
     {
-        yield return new WaitForSeconds(12);
+        yield return new WaitForSeconds(3);
         Board.SetActive(true);
         StartCoroutine(Timer());
     }
 
     IEnumerator SceneSwitcher()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(4);
         NextScene.SetActive(true);
         CurrentScene.SetActive(false);
     }
