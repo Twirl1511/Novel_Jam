@@ -11,8 +11,8 @@ public class FinalManager : MonoBehaviour
         backgrounds[0].SetActive(true);
         StartCoroutine(DelayNextBG(backgrounds[1],5));
         StartCoroutine(DelayNextBG(backgrounds[2], 9));
-        StartCoroutine(DelayNextBG(backgrounds[3], 37));
-        StartCoroutine(DelayNextBG(backgrounds[4], 40));
+        StartCoroutine(DelayNextBG(backgrounds[3], 40));
+        StartCoroutine(DelayNextBG(backgrounds[4], 42));
         StartCoroutine(DelayNextBG(END, 47));
     }
 

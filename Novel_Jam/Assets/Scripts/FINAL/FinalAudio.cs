@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class FinalAudio : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public AudioSource AudioSource;
+    public AudioClip Ringing;
     void Start()
     {
-        
+        StartCoroutine(DelayStart(9));
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator DelayStart(float seconds)
     {
-        
+        yield return new WaitForSeconds(seconds);
+        PlayRinging();
+    }
+
+    public void PlayRinging()
+    {
+        StartCoroutine(Delay(Ringing, Ringing.length));
+    }
+    IEnumerator Delay(AudioClip audioClip, float time)
+    {
+        AudioSource.clip = audioClip;
+           
+        AudioSource.Play();
+        yield return new WaitForSeconds(time);
+
     }
 }
