@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PianoButtons : MonoBehaviour
 {
+    [SerializeField] private GameObject CurrentScene;
+    [SerializeField] private GameObject NextScene;
 
     [SerializeField] private GameObject Heck;
     [SerializeField] private GameObject HeckTrue;
     [SerializeField] private GameObject HeckFalse;
 
+    [SerializeField] private GameObject PianoButtonsFULL;
 
     [SerializeField] private GameObject FullPiano;
     [SerializeField] private GameObject PartPiano;
@@ -26,6 +29,23 @@ public class PianoButtons : MonoBehaviour
     public AudioClip DoAudio;
     public AudioSource audioSource;
 
+    
+    IEnumerator DelayShowPiano()
+    {
+        yield return new WaitForSeconds(14);
+        PianoButtonsFULL.SetActive(true);
+    }
+
+    IEnumerator SceneSwitcher()
+    {
+        yield return new WaitForSeconds(5);
+        NextScene.SetActive(true);
+        CurrentScene.SetActive(false); 
+    }
+    private void Start()
+    {
+        StartCoroutine(DelayShowPiano());
+    }
 
     public void Sol()
     {
@@ -38,6 +58,7 @@ public class PianoButtons : MonoBehaviour
         StaticResults.PianoAnswer = false;
         HeckFalse.SetActive(true);
         Heck.SetActive(false);
+        StartCoroutine(SceneSwitcher());
     }
     public void SolDiez()
     {
@@ -50,6 +71,7 @@ public class PianoButtons : MonoBehaviour
         StaticResults.PianoAnswer = false;
         HeckFalse.SetActive(true);
         Heck.SetActive(false);
+        StartCoroutine(SceneSwitcher());
     }
     public void Lya()
     {
@@ -62,6 +84,7 @@ public class PianoButtons : MonoBehaviour
         StaticResults.PianoAnswer = false;
         HeckFalse.SetActive(true);
         Heck.SetActive(false);
+        StartCoroutine(SceneSwitcher());
     }
     public void LyaDiez()
     {
@@ -74,6 +97,7 @@ public class PianoButtons : MonoBehaviour
         StaticResults.PianoAnswer = false;
         HeckFalse.SetActive(true);
         Heck.SetActive(false);
+        StartCoroutine(SceneSwitcher());
     }
     public void Si()
     {
@@ -86,6 +110,7 @@ public class PianoButtons : MonoBehaviour
         StaticResults.PianoAnswer = false;
         HeckFalse.SetActive(true);
         Heck.SetActive(false);
+        StartCoroutine(SceneSwitcher());
     }
     public void Do()
     {
@@ -98,5 +123,6 @@ public class PianoButtons : MonoBehaviour
         StaticResults.PianoAnswer = true;
         HeckTrue.SetActive(true);
         Heck.SetActive(false);
+        StartCoroutine(SceneSwitcher());
     }
 }
