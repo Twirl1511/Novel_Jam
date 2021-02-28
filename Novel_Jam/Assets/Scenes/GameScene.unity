@@ -264,6 +264,7 @@ RectTransform:
   - {fileID: 1869138368}
   - {fileID: 1746654194}
   - {fileID: 1562926046}
+  - {fileID: 506946905}
   m_Father: {fileID: 749507423}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5362,6 +5363,80 @@ MonoBehaviour:
   - time: 4
     text: "\u0432\u0432\u0435\u0440\u0445"
     heckSprite: {fileID: 199809251}
+--- !u!1 &506946902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 506946905}
+  - component: {fileID: 506946904}
+  - component: {fileID: 506946903}
+  m_Layer: 5
+  m_Name: Heck left left 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &506946903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506946902}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: dc585b41d4dd44cce92f186a1fd0f388, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &506946904
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506946902}
+  m_CullTransparentMesh: 0
+--- !u!224 &506946905
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506946902}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 30495119}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -436.5, y: -257.4}
+  m_SizeDelta: {x: 186.2, y: 254.95}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &516151234
 GameObject:
   m_ObjectHideFlags: 0
@@ -9203,7 +9278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -201.7, y: 62.9}
+  m_AnchoredPosition: {x: -234.2, y: 0.9}
   m_SizeDelta: {x: 169.79999, y: 261.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847292708
@@ -12455,7 +12530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1173077011
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16995,7 +17070,7 @@ MonoBehaviour:
   - time: 3
     text: "\u041E\u0448\u0438\u0431\u0430\u0442\u044C\u0441\u044F \u0442\u044B \u0433\u043E\u0440\u0430\u0437\u0434
       - \u044D\u0442\u043E \u044F \u0432\u0438\u0436\u0443"
-    heckSprite: {fileID: 1562926045}
+    heckSprite: {fileID: 506946902}
   - time: 3
     text: "\u0410 \u0438\u0441\u043A\u0430\u0442\u044C \u043E\u0448\u0438\u0431\u043A\u0438
       \u0442\u044B \u0443\u043C\u0435\u0435\u0448\u044C?"
@@ -20401,7 +20476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1971367922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20421,7 +20496,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d84616726b2b04df5a62ed5e9ad72f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 123680c8a56884cdfb42f5838ab6e643, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
