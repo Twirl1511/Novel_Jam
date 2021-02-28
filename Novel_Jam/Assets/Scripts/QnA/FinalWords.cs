@@ -1,102 +1,53 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FinalWords : MonoBehaviour
 {
-    [SerializeField] private GameObject Heck;
-    [SerializeField] private GameObject HeckTrue;
-    [SerializeField] private GameObject HeckFalse;
+ 
+    [SerializeField] private GameObject[] HecksYES;
+    [SerializeField] private GameObject FinalWord;
+    [SerializeField] private GameObject FinalTRUE;
 
 
-    [SerializeField] private GameObject AnswerTRUE;
-    [SerializeField] private GameObject AnswerFALSE;
-    [SerializeField] private InputField firstWord;
-    [SerializeField] private InputField secondWord;
-    [SerializeField] private InputField thirdWord;
-    public string[] firstWordsArray;
-    public string[] secondWordsArray;
-    public string[] thirdWordsArray;
+    private int counter = 0;
 
+   
 
-    // Start is called before the first frame update
-    void Start()
+    IEnumerator DelayFinalScene()
     {
-        
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene("EndGame");
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        StartCoroutine(DelayFinelWord());
     }
-
+    IEnumerator DelayFinelWord()
+    {
+        yield return new WaitForSeconds(16);
+        FinalWord.SetActive(true);
+    }
     public void AnswerButton()
     {
-        if (IsAnswerCorrect())
+        counter++;
+        try
         {
-            Heck.SetActive(false);
-            HeckTrue.SetActive(true);
-            Debug.Log("Nice answer");
-            StaticResults.FinalWordsAnswer = true;
-            AnswerTRUE.SetActive(true);
+            HecksYES[counter - 1].SetActive(true);
         }
-        else
+        catch
         {
-            Heck.SetActive(false);
-            HeckFalse.SetActive(true);
-            Debug.Log("Bad answer");
-            StaticResults.FinalWordsAnswer = false;
-            AnswerFALSE.SetActive(true);
+
+        }
+        
+        if (counter >= 4)
+        {
+            FinalTRUE.SetActive(true);
+            StartCoroutine(DelayFinalScene());
         }
     }
 
-    private bool FirstWordContained()
-    {
-        foreach(var e in firstWordsArray)
-        {
-            if(e == firstWord.text.ToLower().Trim() && e != "")
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private bool SecondWordContained()
-    {
-        foreach (var e in secondWordsArray)
-        {
-            if (e == secondWord.text.ToLower() && e != "")
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private bool ThirdWordContained()
-    {
-        foreach (var e in thirdWordsArray)
-        {
-            if (e == thirdWord.text.ToLower() && e != "")
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private bool IsAnswerCorrect()
-    {
-        if(FirstWordContained() && SecondWordContained() && ThirdWordContained())
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+    
 }
