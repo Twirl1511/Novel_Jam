@@ -33,26 +33,23 @@ public class FinalWords : MonoBehaviour
     }
 
     private string da = "!";
+    private bool flag = true;
     public void AnswerButton()
     {
         Debug.Log(counter);
         counter++;
-        try
-        {
-            for(int i = 0; i< counter; i++)
-            {
-                da += "!";
-            }
-            HecksYES[counter - 1].SetActive(true);
-            text.text = "ДА"+da;
-        }
-        catch
-        {
-
-        }
         
-        if (counter >= 4)
+            
+            da += "!";
+            
+            HecksYES[counter - 1].SetActive(true);
+            text.text = "ДА" + da;
+        
+
+        if (counter >= 4 && flag)
         {
+            flag = false;
+            FinalWord.GetComponent<Button>().interactable = false;
             FinalTRUE.SetActive(true);
             StartCoroutine(DelayFinalScene());
         }
