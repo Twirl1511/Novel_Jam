@@ -1034,10 +1034,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 195758074}
   HecksPhrases:
-  - time: 1
+  - time: 1.5
     text: "\u041C\u0434\u0430..."
     heckSprite: {fileID: 1043168646}
-  - time: 1
+  - time: 2
     text: "\u042D\u0442\u043E gg"
     heckSprite: {fileID: 1043168646}
   - time: 3
@@ -3840,7 +3840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &346798147
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12405,7 +12405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1173077011
 RectTransform:
   m_ObjectHideFlags: 0
