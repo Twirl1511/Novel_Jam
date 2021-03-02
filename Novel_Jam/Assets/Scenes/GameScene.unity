@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 17447137}
   - component: {fileID: 17447136}
   m_Layer: 5
-  m_Name: Delete back
+  m_Name: Delete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,7 +262,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 219087195}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1878,9 +1878,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1357730100}
   - {fileID: 17447135}
   - {fileID: 2107740169}
+  - {fileID: 1357730100}
   m_Father: {fileID: 1781004170}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3881,8 +3881,8 @@ MonoBehaviour:
   AnswerFalse: {fileID: 84596614}
   Board: {fileID: 1224230204}
   TimerText: {fileID: 2120456001}
-  FakeButtons: {fileID: 0}
-  RealButtons: {fileID: 0}
+  TimerObg: {fileID: 2120455999}
+  RealButtons: {fileID: 1693287933}
 --- !u!114 &346798149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12727,7 +12727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1224230205
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13916,7 +13916,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 346798148}
-        m_MethodName: RightAnswerClick
+        m_MethodName: FalseAnswerClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14145,11 +14145,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 219087195}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -217, y: -21}
+  m_AnchoredPosition: {x: 217, y: -21}
   m_SizeDelta: {x: 150, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1357730101
@@ -20854,7 +20854,7 @@ GameObject:
   - component: {fileID: 1999190613}
   - component: {fileID: 1999190612}
   m_Layer: 5
-  m_Name: Delete
+  m_Name: Delete Save
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20907,7 +20907,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: b465b8c6c03b6c044883d2c6ddb44858,
+    m_HighlightedSprite: {fileID: 21300000, guid: 3bf6a3126d2961044afac0fec4502679,
       type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
@@ -20924,7 +20924,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 346798148}
-        m_MethodName: FalseAnswerClick
+        m_MethodName: RightAnswerClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22307,7 +22307,7 @@ GameObject:
   - component: {fileID: 2107740171}
   - component: {fileID: 2107740170}
   m_Layer: 5
-  m_Name: (SAVE) back
+  m_Name: (SAVE)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22325,11 +22325,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 219087195}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 217, y: -21}
+  m_AnchoredPosition: {x: -217, y: -21}
   m_SizeDelta: {x: 150, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107740170

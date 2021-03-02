@@ -15,7 +15,7 @@ public class ButtonDelete : MonoBehaviour
     [SerializeField] private Text TimerText;
     private int timerInt = 5;
 
-    [SerializeField] GameObject FakeButtons;
+    [SerializeField] GameObject TimerObg;
     [SerializeField] GameObject RealButtons;
 
 
@@ -70,8 +70,10 @@ public class ButtonDelete : MonoBehaviour
         Debug.Log("right");
         AnswerTrue.SetActive(true);
         RealButtons.SetActive(false);
+        TimerObg.SetActive(false);
 
         StartCoroutine(DelayBoardDelete());
+
         StartCoroutine(SceneSwitcher());
     }
     public void FalseAnswerClick()
@@ -79,8 +81,8 @@ public class ButtonDelete : MonoBehaviour
         Debug.Log("false");
         AnswerFalse.SetActive(true);
         RealButtons.SetActive(false);
-        
-        
+        TimerObg.SetActive(false);
+        StartCoroutine(DelayBoardDelete());
         StartCoroutine(SceneSwitcher());
     }
 
