@@ -29,7 +29,7 @@ public class QuestionA : MonoBehaviour
 
     IEnumerator InputFieldON()
     {
-        yield return new WaitForSeconds(32);
+        yield return new WaitForSeconds(29);
         InputField.SetActive(true);
     }
 

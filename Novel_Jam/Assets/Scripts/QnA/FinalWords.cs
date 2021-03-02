@@ -32,7 +32,7 @@ public class FinalWords : MonoBehaviour
         FinalWord.SetActive(true);
     }
 
-    private string da = "!";
+    private string da = " ДА! ";
     private bool flag = true;
     public void AnswerButton()
     {
@@ -40,10 +40,10 @@ public class FinalWords : MonoBehaviour
         counter++;
         
             
-            da += "!";
+            da += " ДА! ";
             
             HecksYES[counter - 1].SetActive(true);
-            text.text = "ДА" + da;
+            text.text = "ДА!" + da;
         
 
         if (counter >= 4 && flag)
