@@ -11,20 +11,48 @@ public class ManualChangeDialog : MonoBehaviour
     public Text NameText;
     public AudioSource audioSource;
     public GameObject BackButton;
+    
+    
+    public GameObject ForwardButton;
     public GameObject Exit;
     public Image Background;
     private int number;
+   
     private void Start()
     {
-        number = 0;
-        NewPhrase(); 
+        
+        number = -1;
+        ForwardButton.SetActive(false);
+        BackButton.SetActive(false);
+
+        StartCoroutine(FirstSteps());
+        
+        StartCoroutine(StartmanualScene());
     }
    
+
+    IEnumerator FirstSteps()
+    {
+        for(int i = 0; i < 5; i++)
+        {
+            Forward();
+            yield return new WaitForSeconds(2);
+        }
+    }
+    
+
+    IEnumerator StartmanualScene()
+    {
+        yield return new WaitForSeconds(8);
+        NewPhrase();
+        ForwardButton.SetActive(true);
+    }
+
 
     private void Update()
     {
         
-        if (number<1)
+        if (number<5)
         {
             BackButton.SetActive(false);
         }
